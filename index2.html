@@ -1,0 +1,304 @@
+<!--2372016 Brigitta A-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="images/logo-removebg-preview.png"
+      type="image/x-icon"
+      class="logoxicon"
+    />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!--ANIMATION AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>FOOD COM</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index1.html" class="nav__logo">
+          <img src="images/logo-removebg-preview.png" alt="logo image" />
+          <!--https://pin.it/3iKTyaY-->
+          FOOD COM
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index1.html" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#popular" class="nav__link">Popular</a>
+            </li>
+            <li class="nav__item dropdown">
+                <a href="index2.html">
+                    <span  class="nav__link">Destination</span>
+                </a>
+                <ul class="dropdown-content">
+                    <a href="bandung.html"><li>Bandung</li></a>
+                    <hr>
+                    <a href="bali.html"><li>Bali</li></a>
+                    <hr>
+                    <a href="yogya.html"><li>Yogyakarta</li></a>
+                </ul>
+            </li>
+            <!--<li class="nav__item">
+                <a href="index2.html" class="nav__link">Destination</a>
+            </li>>-->
+            <li class="nav__item">
+              <a href="#joinus" class="nav__link">Join Us</a>
+            </li>
+          </ul>
+
+          <!--close button-->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+
+          <img
+            src="images/leaf-branch-4.png"
+            alt="nav image"
+            class="nav__img-1"
+          />
+          <img
+            src="images/leaf-branch-3.png"
+            alt="nav image"
+            class="nav__img-2"
+          />
+        </div>
+
+        <div class="nav__buttons">
+          <!--Theme change button-->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+          <!--Toggle button-->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-apps-2-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      
+      <!--==================== DESTINATION ====================-->
+      <section class="destination section" id="destination">
+          <span class="section__subtitle">Indonesia's</span>
+          <h2 class="section__title" data-aos="fade-up" data-aos-duration="1000">Destination</h2>
+          
+          <div class="destination__container container grid">
+            <a href="bandung.html">
+                <article class="destination__card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+                    <img
+                    src="images/dbandung.jpeg"
+                    alt="destination image"
+                    class="destination__img"
+                  />
+                  
+                  <span class="destination__name">Bandung</span>
+      
+              </article>
+            </a>
+
+        <a href="bali.html">
+            <article class="destination__card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                <img
+                src="images/dbali.jpeg"
+                alt="destination image"
+                class="destination__img"
+            />
+            
+                <span class="destination__name">Bali</span>
+            </article>
+        </a>
+        
+        <a href="yogya.html">
+            <article class="destination__card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+              <img
+                src="images/dyogya2.jpeg"
+                alt="destination image"
+                class="destination__img"
+                />
+                
+                <span class="destination__name">Yogyakarta</span>
+            </article>
+        </a>
+          
+
+          
+
+         
+
+        </div>
+      </section>
+
+      <!--==================== JOIN US ====================-->
+      <section class="join section" id="joinus">
+        <div class="join__container container" data-aos="zoom-in" data-aos-duration="1000">
+          <div class="join__content grid">
+            <img
+              src="images/keraktelur-anmt.png"
+              alt="join image"
+              class="join__img"
+            />
+
+            <div class="join__data">
+              <span class="section__subtitle">Join Us</span>
+              <h2 class="section__title">
+                Join Us For <br />
+                Updates
+              </h2>
+
+              <form action="" class="join__form">
+                <input
+                  type="email"
+                  placeholder="Enter Email"
+                  class="join__input"
+                />
+
+                <button class="button join__button" type="button" onclick="Swal.fire('Your email has been added')">
+                  Join <i class="ri-send-plane-line"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <img
+            src="images/spinach-leaf.png"
+            alt="join image"
+            class="join__spinach"
+          />
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div>
+          <a href="#" class="footer__logo">
+            <img src="images/logo-removebg-preview.png" alt="logo image" />
+            FOOD COM
+          </a>
+
+          <p class="footer_description">
+            Food for the body is not <br />
+            enough. There must be food <br />
+            for the soul.
+          </p>
+        </div>
+
+        <div class="footer__content">
+          <div>
+            <h3 class="footer__title">Main Menu</h3>
+
+            <ul class="footer__links">
+               <li>
+                <a href="index1.html" class="footer__link">Home</a>
+               </li> 
+              <li>
+                <a href="index1.html" class="footer__link">About</a>
+              </li>
+              <li>
+                <a href="#popular" class="footer__link">Popular</a>
+              </li>
+              <li>
+                <a href="index2.html" class="footer__link">Destination</a>
+            </li>
+              <li>
+                <a href="#joinus" class="footer__link">Join Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Address</h3>
+
+            <ul class="footer__links">
+              <li class="footer__information">
+                Jl. Kawasan Suci 1234 <br />
+                Margacinta 40299, Bandung
+              </li>
+              <li class="footer__information">8AM-9PM</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title"></h3>
+
+            <ul class="footer__social">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-twitter-fill"></i>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <img src="images/spring-onion.png" alt="footer image" class="footer__onion">
+        <img src="images/spinach-leaf.png" alt="footer image" class="footer__spinach">
+        <img src="images/leaf-branch-4.png" alt="footer image" class="footer__leaf">
+
+      </div>
+      <span class="footer__copy">
+        &copy; 2372016 Brigitta. All rights reserved
+      </span>
+
+    </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="script.js"></script>
+
+    <script src="dist/sweetalert2.all.min.js"></script>
+
+    <!--JS ANIMATION AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
